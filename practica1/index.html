@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables 1</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 1: Arduino Básico</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Ivan PP.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Angel Iván Domínguez Cruz</div>
+                                <div class="text-muted">Ingeniería Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 20, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Arduino Img.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En esta práctica, nuestro profesor nos mandó una serie de documentos con distintos ejercicios de Arduino para reforzar y recordar los conocimientos previos adquiridos en programación orientada a objetos.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Arduino es una plataforma de código abierto utilizada para la creación de proyectos electrónicos y robóticos. Consiste en una placa de hardware con un microcontrolador y un entorno de desarrollo de software fácil de usar. </p>
+                        <p class="fs-6 mb-4">Arduino utiliza un microcontrolador basado en la arquitectura AVR, proporciona un entrono de desarrollo integrado, sirve para una amplia gama de proyectos, cualquiera puede utilizar, modifcar y distribuir su hardware y software y hay una gran variedad de placas en el mercado.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">En esta práctica utilizamos jumpers, diodos LED, push buttons, resistencias, un protoboard y nuestra placa de desarrollo Arduino Uno.</p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">El profesor nos brindó 18 documentos en donde podemos observar 18 distintos circuitos en Protoboard conectados a un Arduino con sus respectivos códigos de programación. Nosotros tuvimos que hacer las mismas conexiones simuladas, después copiamos y entndimos el código de Arduino para así poder pegarlo o escribirlo en nuestro propio programa de Arduino. Si todo estaba en orden, al compilar nuestro código, el circuito debería ser funcional.</p>
+                        <p class="fs-6 mb-4">En esta práctica nos enfocamos a hacer circuitos simples y sencillos de entender, como los siguientes: encender un LED, encender dos LEDs, encender LEDs con botones, controlar un display de 7 segmentos, etc.</p>
+                        
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">A través de TinkerCad nuestro profesor nos proporcionó las simulaciones de los circuitos con sus respectivos códigos.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Simulación.png" alt="..." /></figure>
+                                               
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">Hicimos el armado de los 18 circuitos asignados por el profesor, todos los compenentes y diagramas ya habían sido previamente dados por el profesor.</p>                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Logré realizar de manera efectiva los circuitos pedidos por el profesor, además logré recordar los conocimientos que ya había adquirido en otras clases sobre programación en Arduino, pues personalmente llevaba mucho tiempo sin programar en lenguajes basados en C. A continuación, los circuitos construidos en esta práctica:</p>
+                         <!-- Seccion Tarjetas reportes Prácticas-->
+                         <section id="practicas">
+                            <div class="container px-5 my-2">
+                             <div class="row gx-5">
+                            <!--Tarjeta Práctica 1 -->
+                                 <div class="col-lg-4 mb-5">
+                                     <div class="card h-100 shadow border-0">
+                                         <figure class="mb-4" align="center"><video width="100%"  controls>
+                                         <source src="video/Practica 1.0.mp4" type="video/mp4">
+                                         </video></p></figure>
+                                            <div class="card-body px-4">
+                                            <h5 class="card-title mt-3 mb-1">Ejercicio 0: Ejemplo Blink</h5>
+                                            <p class="card-text mb-0">C++ code<br>
+                                                void setup(){<br>
+                                            pinMode(LED_BUILTIN, OUTPUT);<br>
+                                            }<br>
+                                                                    
+                                            void loop(){<br>
+                                            digitalWrite(LED_BUILTIN, HIGH);<br>
+                                            delay(1000);<br>
+                                            digitalWrite(LED_BUILTIN, LOW);<br>
+                                            delay(1000);<br>
+                                            }</p>
+                                        </div>
+                                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                                <div class="d-flex align-items-end justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                         <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.1.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 1: Salida Digital HIGH</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                           void setup(){<br>
+                                       pinMode(LED_BUILTIN, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                       digitalWrite(LED_BUILTIN, HIGH);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.2.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 2: Salida Digital LOW</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                           void setup(){<br>
+                                       pinMode(LED_BUILTIN, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                       digitalWrite(LED_BUILTIN, LOW);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.3.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 3: Salida Digital Delay</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                           void setup(){<br>
+                                       pinMode(LED_BUILTIN, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                       digitalWrite(LED_BUILTIN, HIGH);<br>
+                                       delay(100);<br>
+                                       digitalWrite(LED_BUILTIN, LOW);<br>
+                                       delay(100);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.4.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 4: Salida Digital LED</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                           void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                       digitalWrite(13, HIGH);<br>
+                                       delay(1000);<br>
+                                       digitalWrite(13, LOW);<br>
+                                       delay(1000);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.5.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 5: Salida Digital Protoboard 1</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                       digitalWrite(13, HIGH);<br>
+                                       delay(1000);<br>
+                                       digitalWrite(13, LOW);<br>
+                                       delay(1000);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.6.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 6: Salida Digital Protoboard 2</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                       digitalWrite(13, HIGH);<br>
+                                       delay(1000);<br>
+                                       digitalWrite(13, LOW);<br>
+                                       delay(1000);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.7.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 7: Salida Digital LEDs 1</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                       digitalWrite(13, HIGH);<br>
+                                       delay(1000);<br>
+                                       digitalWrite(13, LOW);<br>
+                                       delay(1000);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.8.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 8: Salida Digital LEDs 2</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(12, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                       digitalWrite(13, HIGH);<br>
+                                       delay(1000);<br>
+                                       digitalWrite(13, LOW);<br>
+                                       delay(1000);<br>
+                                       digitalWrite(12, HIGH);<br>
+                                       delay(1000);<br>
+                                       digitalWrite(12, LOW);<br>
+                                       delay(1000);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.9.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 9: Salida Digital Display 7 Segmentos</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(12, OUTPUT);<br>
+                                       pinMode(10, OUTPUT);<br>
+                                       pinMode(9, OUTPUT);<br>
+                                       pinMode(7, OUTPUT);<br>
+                                       pinMode(6, OUTPUT);<br>
+                                       pinMode(5, OUTPUT);<br>
+                                       pinMode(4, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        digitalWrite(6, LOW);<br>
+                                        digitalWrite(7, LOW);<br>
+                                        digitalWrite(10, LOW);<br>
+                                        digitalWrite(12, LOW);<br>
+                                        digitalWrite(13, LOW);<br>
+                                        digitalWrite(5, LOW);<br>
+                                        digitalWrite(4, HIGH);<br>
+                                        digitalWrite(9, HIGH);<br>
+                                        delay(1000);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.10.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 10: Salida Contador Digital Display 7 Segmentos</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(12, OUTPUT);<br>
+                                       pinMode(10, OUTPUT);<br>
+                                       pinMode(9, OUTPUT);<br>
+                                       pinMode(7, OUTPUT);<br>
+                                       pinMode(6, OUTPUT);<br>
+                                       pinMode(5, OUTPUT);<br>
+                                       pinMode(4, OUTPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        digitalWrite(6, HIGH);<br>
+                                        digitalWrite(7, HIGH);<br>
+                                        digitalWrite(10, HIGH);<br>
+                                        digitalWrite(12, HIGH);<br>
+                                        digitalWrite(13, HIGH);<br>
+                                        digitalWrite(5, HIGH);<br>
+                                        digitalWrite(4, LOW);<br>
+                                        digitalWrite(9, LOW);<br>
+                                        delay(1000);<br>
+                                        
+                                        digitalWrite(6, LOW);<br>
+                                        digitalWrite(7, HIGH);<br>
+                                        digitalWrite(10, HIGH);<br>
+                                        digitalWrite(12, LOW);<br>
+                                        digitalWrite(13, LOW);<br>
+                                        digitalWrite(5, LOW);<br>
+                                        digitalWrite(4, LOW);<br>
+                                        digitalWrite(9, LOW);<br>
+                                        delay(1000);<br>
+                                        
+                                        digitalWrite(6, HIGH);<br>
+                                        digitalWrite(7, HIGH);<br>
+                                        digitalWrite(10, LOW);<br>
+                                        digitalWrite(12, HIGH);<br>
+                                        digitalWrite(13, HIGH);<br>
+                                        digitalWrite(5, LOW);<br>
+                                        digitalWrite(4, HIGH);<br>
+                                        digitalWrite(9, LOW);<br>
+                                        delay(1000);<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.11.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 11: Entrada Digital Boton</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(8, INPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        digitalWrite(13, digitalRead(8));<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.12.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 12: Entrada Digital Boton 2</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(8, INPUT);<br>
+                                       pinMode(11, OUTPUT);<br>
+                                       pinMode(2, INPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        digitalWrite(13, digitalRead(8));<br>
+                                        digitalWrite(11, digitalRead(2));<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.13.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 13: Entrada Digital Condicionales Boton</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(8, INPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        if (digitalRead(8) == HIGH){<br>
+                                          digitalWrite(13, HIGH);<br>
+                                        }<br>
+                                        else if(digitalRead(8) == LOW){<br>
+                                          digitalWrite(13, LOW);<br>
+                                        }<br>
+                                       }</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.14.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 14: Entrada Digital Condicionales Boton 2</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(8, INPUT);<br>
+                                       pinMode(11, OUTPUT);<br>
+                                       pinMode(2, INPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        if (digitalRead(8) == HIGH){<br>
+                                          digitalWrite(13, HIGH);<br>
+                                        }<br>
+                                        else if(digitalRead(8) == LOW){<br>
+                                          digitalWrite(13, LOW);<br>
+                                        }<br>
+                                        if (digitalRead(2) == HIGH){<br>
+                                            digitalWrite(11, HIGH);<br>
+                                          }<br>
+                                          else if(digitalRead(2) == LOW){<br>
+                                            digitalWrite(11, LOW);<br>
+                                          }<br>
+                                       }
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.15.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 15: Entrada Digital Condicionales OR Boton 1</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(8, INPUT);<br>
+                                       pinMode(2, INPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        if (digitalRead(8) == HIGH || digitalRead(2) == HIGH){<br>
+                                          digitalWrite(13, HIGH);<br>
+                                        }<br>
+                                        else{<br>
+                                          digitalWrite(13, LOW);<br>
+                                        }<br>
+                                       }
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.16.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 16: Entrada Digital Condicionales AND Botones</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(8, INPUT);<br>
+                                       pinMode(2, INPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        if (digitalRead(8) == HIGH && digitalRead(2) == HIGH){<br>
+                                          digitalWrite(13, HIGH);<br>
+                                        }<br>
+                                        else{<br>
+                                          digitalWrite(13, LOW);<br>
+                                        }<br>
+                                       }
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 1.17.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 17: Entrada Digital Contador LEDs</h5>
+                                       <p class="card-text mb-0">C++ code<br>
+                                        void setup(){<br>
+                                       pinMode(13, OUTPUT);<br>
+                                       pinMode(12, OUTPUT);<br>
+                                       pinMode(11, OUTPUT);<br>
+                                       pinMode(10, OUTPUT);<br>
+                                       pinMode(2, INPUT);<br>
+                                       }<br>
+                                                               
+                                       void loop(){<br>
+                                        if (digitalRead(2) == HIGH){<br>
+                                          cuenta++;<br>
+                                          delay(500);<br>
+                                        }<br>
+                                        if(cuenta >= 5){<br>
+                                          cuenta = 0;<br>
+                                        }<br>
+                                        if(cuenta == 0){<br>
+                                        digitalWrite(13, LOW);<br>
+                                          digitalWrite(12, LOW);<br>
+                                          digitalWrite(11, LOW);<br>
+                                          digitalWrite(10, LOW);<br>
+                                        } <br>
+                                        else if(cuenta == 1){<br>
+                                            digitalWrite(13, HIGH);<br>
+                                          digitalWrite(12, LOW);<br>
+                                          digitalWrite(11, LOW);<br>
+                                          digitalWrite(10, LOW);<br>
+                                        } <br>
+                                        else if(cuenta == 2){<br>
+                                            digitalWrite(13, HIGH);<br>
+                                          digitalWrite(12, HIGH);<br>
+                                          digitalWrite(11, LOW);<br>
+                                          digitalWrite(10, LOW);<br>
+                                        }<br>
+                                        else if(cuenta == 3){<br>
+                                            digitalWrite(13, HIGH);<br>
+                                          digitalWrite(12, HIGH);<br>
+                                          digitalWrite(11, HIGH);<br>
+                                          digitalWrite(10, LOW);<br>
+                                        }<br>
+                                        else if(cuenta == 4){<br>
+                                            digitalWrite(13, HIGH);<br>
+                                          digitalWrite(12, HIGH);<br>
+                                          digitalWrite(11, HIGH);<br>
+                                          digitalWrite(10, HIGH);<br>
+                                        }<br>
+                                       }
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                    </div>
+                </div>
+            </section> 
+            <!--Fin Seccion de Tarjetas de Prácticas -->
+            
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Para finalizar, me gustaría destacar la importancia que tiene la programación en Arduino como base de la programación de microcontroladores que haremos a lo largo de las clases restantes. Cada uno de los circuitos fueron exitosos y pude recordar lo básico de la programación en C.</p>
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">TinkerCad | From mind to design in minutes. (s. f.). Tinkercad. https://www.tinkercad.com/classrooms/b5s2eOYhgMn/activities/kxX9nVrX23z</p>
+                        <p class="fs-6 mb-4">Fernández, Y. (2022). Qué es arduino, cómo funciona y qué puedes hacer con uno. Xataka. https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">No fueron necesarios para esta practica.</p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
