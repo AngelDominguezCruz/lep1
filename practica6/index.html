@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 6 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables 1</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 6: Sensores</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Ivan PP.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Angel Iván Domínguez Cruz</div>
+                                <div class="text-muted">Ingeniería Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 2, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Attiny</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Sensores.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En esta práctica, aprendimos sobre los ditintios sensores que existen, las diferencias entre ellos y a como programar algunos de ellos. esto resulta importante porque son componentes que vamos a utilizar a lo largo de nuestra vida profesional.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Un sensor es un dispositivo que detecta y mide cambios en su entorno o en un sistema específico y convierte esta información en señales eléctricas, ópticas o mecánicas que pueden ser interpretadas y utilizadas para controlar, monitorear o tomar decisiones en industrias.</p>
+                        <p class="fs-6 mb-4">Los sensores son fundamentales en campos como la electrónica, la automatización industrial, la robótica, la medicina y muchas otras disciplinas, ya que proporcionan datos importantes para el control y la toma de decisiones.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">En esta práctica utilizamos jumpers, un LED, resistencias, un protoboard, los sensores KY-032, KY-002, KY-013, KY-018, DHT11 y HC-SR04, nuestra placa de desarrollo Arduino Uno y el microcontrolador Attiny85.</p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">El profesor nos pidió una pequeña investigación a manera de tabla (que proximamente verán) en la que separamos distintos sensores en sensor, imagen, tipo, medición y hoja de datos. Esto para que aprendamos a diferenciar los sensores del mercado.</p>
+                        <p class="fs-6 mb-4">El enfoque de esta práctica era aprender a programar, armar e interpretar los datos que son obtenidos por circuitos que usan distintos tipos de sensores. Estos sensores cambian dependiendo del rango de valores que manejas, pues los digitales solo darán dos valores (1 y 0) y los analógicos darán un rango mucho más complejo de valores.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Señales.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">A continuación, la tabla que muestra los diferentes tipos de sensores y ejemplos de estos:</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tabla 1.JPG" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tabla 2.JPG" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tabla 3.JPG" alt="..." /></figure>
+
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">A través de Wokwi, mostraré el circuito que fue usado para cada sensor, muchos de los circuitos son similares entre sí y el cambio se observa en la programación (los programas se encuentran al final de esta página):</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Simulación.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Simulación 1.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Simulación 2.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Simulación 3.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Simulación 4.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Simulación 5.png" alt="..." /></figure>
+                    
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">Hice el armado de los 6 circuitos de prueba que fueron utilizados para aprender sobre sensores, cada circuito y programa fue investigado por mi.</p>
+                            
+                            <p id="resultados">
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                                <p class="fs-6 mb-4">Logré realizar y entender de manera efectiva el funcionamiento de muchos sensores utilizados en la industria, sin embargo, no me fue posible usar la pantalla OLED I2C para imprimir los datos. A continuación, los circuitos construidos en esta práctica:</p>
+                          <!-- Seccion Tarjetas reportes Prácticas-->
+                          <section id="practicas">
+                            <div class="container px-5 my-2">
+                             <div class="row gx-5">
+                            <!--Tarjeta Práctica 1 -->
+                                 <div class="col-lg-4 mb-5">
+                                     <div class="card h-100 shadow border-0">
+                                         <figure class="mb-4" align="center"><video width="100%"  controls>
+                                         <source src="video/Practica 4.0.mp4" type="video/mp4">
+                                         </video></p></figure>
+                                            <div class="card-body px-4">
+                                            <h5 class="card-title mt-3 mb-1">Ejercicio 0: Sensor KY-032</h5>
+                                            <p class="card-text mb-0">En este ejercicio, mostré el funcionamiento del sensor KY-032 (sensor de obstáculo) usando un LED que se enciende al detectar un obstáculo.</p>
+                                        </div>
+                                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                                <div class="d-flex align-items-end justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                         <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 4.1.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 1: Sensor KY-002</h5>
+                                       <p class="card-text mb-0">En este ejercicio, mostré el funcionamiento del sensor KY-002 (sensor de vibración) usando un LED que se enciende al sentir una vibración.</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 4.2.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 2: Sensor KY-013</h5>
+                                       <p class="card-text mb-0">En este ejercicio, mostré el funcionamiento del sensor KY-013 (sensor de temperatura) usando la terminal del Arduino Uno para imprimir los datos.</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 4.3.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 3: Sensor KY-018</h5>
+                                       <p class="card-text mb-0">En este ejercicio, mostré el funcionamiento del sensor KY-018 (sensor de intensidad de luz) usando un LED que se enciende al detectar una sombra.</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 4.5.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 4: Sensor DHT11</h5>
+                                       <p class="card-text mb-0">En este ejercicio, mostré el funcionamiento del sensor DHT11 (sensor de temperatura y humedad) usando la terminal del Arduino Uno para imprimir los datos.</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                            <!--Tarjeta Práctica 1 -->
+                            <div class="col-lg-4 mb-5">
+                                <div class="card h-100 shadow border-0">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/Practica 4.4.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                       <div class="card-body px-4">
+                                       <h5 class="card-title mt-3 mb-1">Ejercicio 5: Sensor HC-SR04</h5>
+                                       <p class="card-text mb-0">En este ejercicio, hicimos que dos LEDs parpadearan de maneraa asincrónica.</p>
+                                   </div>
+                                       <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                           <div class="d-flex align-items-end justify-content-between">
+                                               <div class="d-flex align-items-center">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                    <!--Fin de Tarjeta Práctica 1 -->
+                    </div>
+                </div>
+            </section> 
+            <!--Fin Seccion de Tarjetas de Prácticas -->
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión, en esta práctica tuve la oportunidad de adquirir conocimientos valiosos sobre el uso e interpretación de sensores utilizados en la industria. Aprendí cómo estos dispositivos pueden capturar datos cruciales y convertirlos en señales eléctricas que pueden ser procesadas por otros componentes electrónicos.</p>                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Sensores. (s. f.). National Institute of Biomedical Imaging and Bioengineering. https://www.nibib.nih.gov/espanol/temas-cientificos/sensores#:~:text=Los%20sensores%20son%20herramientas%20que,cantidades%20y%20caracter%C3%ADsticas%20que%20detectan.</p>
+                        <p class="fs-6 mb-4">Yuridia, & Yuridia. (2023, 28 febrero). Sensores. SDI. https://sdindustrial.com.mx/blog/sensores/.</p>
+                        <p class="fs-6 mb-4">García, I., & García, I. (2022, 31 diciembre). Los tipos de sensores más usados: definición y funcionalidad. Elecproy. https://elecproy.com/es/blog/tipos-de-sensores/.</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar códigos de la práctica: <a href="files/Códigos de Práctica 6.zip">Carpeta comprimida</a> </p>
+                        <p class="fs-6 mb-4">Descargar tabla de sensores: <a href="files/Tipos de Sensores Huber.pdf">Archivo PDF de la tabla mostrada</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
